@@ -1,0 +1,1015 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+background-color: rgb(17, 17, 17);
+color: rgb(255, 255, 255);
+overflow-x: hidden;
+}
+
+.IMG{
+    width: 100%;
+    height: 100%;
+}
+
+.Todo{
+
+}
+
+
+header{
+width: 100%;
+height: 3rem;  
+display: flex;
+justify-content: space-between;
+position: absolute;
+z-index: 2000;
+background-color: rgba(143, 143, 143, 0.253);
+
+}
+
+h1 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ nav{
+   width: 18%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+} 
+
+.MenuB{
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    fill: #fff;
+}
+
+.MenuX{
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.None{
+    display: none;
+}
+
+.links{
+    position: absolute;
+    top: 20vh;
+    left: 20%;
+    background-color: rgb(255, 255, 255);
+    height: 60vh;
+    width: 60%;
+    transform: scale(0);
+    transition: transform .2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+.links a {
+    text-decoration: none;
+    margin-bottom: .7rem;
+    font-size: 1.5rem;
+}
+
+.active{
+    transform: scale(1);
+}
+
+.Modo{
+    width: 30%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*-----PARTE QUE DALE DESDE LA IZQUIRDA EN EL MENU DE MOVIL ---------*/
+
+.Part{
+    width: 85%;
+    height: 100vh;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform ease-in-out .3s;
+}
+
+.Afuera{
+transform: translateX(0);
+}
+
+/*----------------------------------------*/
+
+/*------------------------------------------------------*/
+
+.Primero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.mio{
+    width: 100%;
+    height:100%;
+    margin: 0 auto;
+    animation-name: mia;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 1000;
+}
+
+
+
+@keyframes mia {
+    0%,10% {background-image: url(/Fotos/P1.jpg);
+  background-size: 100% 100%;
+  
+ }
+ 11%,14%{opacity: 1;}
+  15%,25%{
+      background-image:url(/Fotos/P7.jpg) ;
+      background-size: 100% 100%;
+  }  
+  26%,29%{opacity:1 ;}
+  30%,40%{
+      background-image: url(/Fotos/Lp2.jpg);
+      background-size: 100% 100%;
+  }
+  41%,44%{opacity: 1;}
+  45%,55%{
+      background-image: url(/Fotos/P3.jpg);
+      background-size: 100% 100%;
+  }
+  56%,59%{opacity: 1;}
+  60%,70%{
+  background-image: url(/Fotos/P4.jpg);
+      background-size: 100% 100%;
+  }
+  71%,74%{opacity: 1;}
+  75%,85%{
+      background-image: url(/Fotos/P5.gif);
+      background-size: 100% 100%;
+  }
+  86%,89%{opacity: 1;}
+  90%,100%{
+      background-image: url(/Fotos/P6.png);
+      background-size: 100% 100%;
+     }
+
+}
+
+
+
+  .Entrada{
+     width: 100%;
+    margin-top: 20%; 
+    position: absolute;
+    z-index: 1500;
+    top:30vh;
+    left: 0;
+} 
+
+.Entrada div{
+  
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.242));
+}
+
+.Entrada .titulito{
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+  
+}  
+
+
+
+
+/*-------------------SEGUNDA SECCION-----------------------*/
+
+.Segundo{
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    
+}
+
+.Semueve{
+    height:3%;
+    font-family: monospace; 
+}
+
+.S2{
+    width: 100%;
+    height: 90%;
+}
+
+
+.ElMain{
+    width: 80%;
+    height: 32%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.9rem; 
+}
+
+h3{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.ElMain div {
+    width: 100%;
+    height: 70%;
+}
+
+main p {
+    width: 100%;
+    text-align: center;
+}
+
+/*----------NUEVAS COSAS ---------------------*/
+.ArtIcon{
+    width: 100%;
+    min-height: 50%;
+    padding-top: 10px;
+}
+
+.Avarca{
+    width: 90%;
+    height: 8%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--LA PIRAMIDE--*/
+
+
+.Los3{
+
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .Los2{
+
+     display: flex;
+     justify-content: center;
+ }
+ 
+ 
+ .Los1{
+     display: flex;
+     justify-content: center;
+
+ }
+ 
+ .Tegno{
+     width: 6rem;
+     height: 4.5rem;
+     background-color: rgba(224, 224, 224, 0.158);
+     
+     /* clip-path: polygon(23% 17%, 70% 16%, 89% 50%, 71% 86%, 25% 87%, 5% 52%); */
+   /*  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);*/
+   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ 
+ 
+ .Tegno svg{
+     width: 2rem;
+     height:2rem;
+ }
+ 
+ .Tegno p{
+     text-align: center;
+ }
+ 
+ .js{
+     color: rgb(238, 232, 48);
+ }
+ 
+ .html{
+     color: #DC4A25;
+ }
+ 
+ .css{
+     color: #146EB0;
+ }
+ 
+ .react{
+     color: #5ED3F3;
+ }
+ 
+ .node{
+     color: rgb(58, 120, 48);
+ }
+ 
+ .bus{
+     color: rgb(149, 46, 147);
+ }
+ 
+ .gi{
+     color: #d66d53;
+ }
+ 
+ .hu{
+     color: #eee;
+ }
+ 
+ .fi{
+   width: 30%;
+   height: 40%;
+ }
+
+
+
+/*----------TERCERA SECCION--------------------------------*/
+
+.Seccion3{
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.IdaEnlace{
+ width: 90%;
+ height: 5%;
+ margin-left: auto;
+ margin-right: auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.Enlace2{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Enlace2 a {
+    color: rgb(255, 255, 255);
+    padding: 5px 8px 5px 8px;
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.Proye{
+    scroll-margin-top: 4rem;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.Proye .ConCuadro1{
+    scroll-margin-top: 15px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 5px;
+    align-items: center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Proye::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .Proye::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+
+.ConCuadro{
+    width: 100%;
+    height: 90%;
+
+}
+
+.Cuadro{
+    width: 45%;
+    margin-right: 1%;
+    margin-left: 1%;
+    height: 25%;
+    background-color: rgb(30, 30, 30);
+}
+
+.SeVe{
+    width: 90%;
+    height: 65%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.SeVe2{
+    width: 100%;
+    height: 20%;
+    margin-top: 10px;
+    display: flex;
+}
+
+.Dtegno{
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    padding-left: 13px;
+}
+
+.Enlaces{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    padding-right:10px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.Gii{
+    width: 100%;
+    height: 45%;
+}
+
+.Vi{    
+    width: 100%;
+    height: 45%;
+}
+
+.H{
+    width: 20%;
+    height: 60%;
+ }
+
+ .C{
+    width: 20%;
+    height: 60%;
+ }
+
+ .J{
+     width: 20%;
+    height: 59%;
+ }
+
+ .R{
+    width: 20%;
+    height: 60%;
+ }
+
+ .N{
+    width: 20%;
+    height: 60%;
+ }
+
+ .M{
+    width: 20%;
+    height: 60%;
+ }
+
+ .B{
+    width: 20%;
+    height: 60%;
+ }
+
+ .Vi{
+    color: #aea9a7;
+ }
+
+ .Gii{
+    color: #aea9a7;
+ }
+
+
+/*------------SECCIOON CONCO 5---------------------------------**/
+
+.Quinto{
+    width: 100%;
+    height: 100vh;
+    padding-top: 7%;
+    position: relative;
+}
+
+
+.h25all{
+    width: 90%;
+    height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hr3{
+    width: 25%;
+  }
+  
+  .h25{
+    width: 50%;
+  }
+  
+  .hr4{
+    width: 25%;
+  }
+  
+  .ArtS5{
+      width: 96%;
+      height: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .ArtS5 div{
+      width: 30%;
+      height: 50%;
+      margin: 1px;
+      border: 1px solid rgb(247, 247, 247);
+  }
+  
+  .ArtS5 svg{
+      width: 40%;
+      height: 40%;
+      margin-left: 30%;
+      margin-top: 1rem;
+  }
+  
+  .ArtS5 p{
+      text-align: center;
+  }
+  
+  .ArtS5 a{
+      text-decoration: none;
+  }
+  
+  
+  form{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .half{
+    display: flex;
+    justify-content: space-between;
+  }
+  .input{
+    padding: .5rem;
+    width: 49%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: #eee;
+  }
+  .text-area{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    resize: none;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  .submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+  
+  }
+  
+  .ArtS5 div svg{
+    color: rgb(255, 255, 255);
+}
+
+.ArtS5 div p{
+    color: rgb(255, 255, 255);
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+
+/*----------------------------------*/
+/*----------------------------------------------*/
+/*-----------------------------------------------------------------*/
+
+@media screen and (min-width: 440px) {
+
+    .ElMain{
+        height: 40%;
+    }
+}
+
+@media screen and (min-width: 780px) {
+
+
+
+
+.S2{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+main{
+    width: 70%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.S2 article {
+    width: 80%;
+    min-height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Los3{
+    width: 100%;
+}
+
+.Los2{
+    width: 100%;
+
+}
+
+.Los1{
+    width: 100%;
+
+}
+
+.Tegno{
+  width: 8rem;
+  height: 5.5rem;
+}
+.Tegno svg{
+  width: 2.5rem;
+  height: 2.5;
+}
+
+
+/*-*/
+.T3{
+    height: 60%;
+}
+
+.Bonis{
+    margin-bottom: .1rem;
+}
+
+
+.FotP{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.Entrada{
+
+   top: 0;
+} 
+
+
+
+.Entrada .titulito{
+   font-size: 3rem;
+}  
+
+.Tercero{
+    margin-bottom: 4rem;
+}
+
+
+/*-----FORMULARIO----------*/
+.ArtS5{
+    width: 80%;
+  }
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+}
+
+.links{
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    flex-direction: row;
+    transform: scale(1);
+
+}
+
+.Mn a:hover{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+ h1{
+     margin-left: 2rem;
+ }
+
+ .Modo{
+     display: none;
+ }
+ 
+ nav{
+    background-color: rgba(121, 121, 121, 0.077);
+}
+ .Mn{
+     width: 100%;
+     display: flex;
+     color: rgb(0, 0, 0);
+ }
+
+ .Mn a{
+     font-size: 1.3rem;
+     text-decoration: none;
+     color: azure;
+     margin-right: .5rem;
+ }
+/*----------------------------------*/
+
+.IdaEnlace{
+    width: 70%
+}
+
+.Enlace2{
+    width: 18%;
+}
+
+.Enlace2 a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.Vi:hover{
+    color: #ffffff;
+}
+
+.Gii:hover{
+    color: #fff;
+}
+
+.Tegno{
+    width: 10rem;
+    height: 7rem;
+   }
+
+ .S2{
+     width: 85%;
+     height: 95%;
+ }
+
+ .Cuadro{
+    width: 30%;
+ }
+
+ .ElMain{
+    width: 60%;
+    height: 25%;
+ }
+
+ .S2 .ArtIcon {
+    width: 80%;
+    min-height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ .Avarca{
+
+ }
+
+
+/*--------------SLIDE PC--------------------------------------*/
+.slider {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .P1Todos{
+    width: 30%;
+  }
+  
+  .slides {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+  }
+
+  .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slides::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transform: scale(1);
+    transition: transform 0.5s;
+
+  
+  }
+
+  .Cuadro{
+    width: 24%;
+    height: 33%;
+}
+
+.Proye .ConCuadro1{
+    justify-content: center;
+}
+
+
+
+/*------FORMULARIO 1000----------------------------*/
+
+.ArtS5{
+    width: 50%;
+  }
+
+  .ArtS5 div{
+    width: 25%;
+    height: 60%;
+    margin: 1px;
+    border: 1px solid rgb(247, 247, 247);
+}
+
+.ArtS5 div:active{
+    background-color: #aea9a7;
+}
+
+.ArtS5 .Cont1 svg:hover {
+    color: rgb(82, 182, 25);
+}
+.ArtS5 .Cont1 p:hover {
+    color: rgb(82, 182, 25);
+}
+
+.ArtS5 .Cont2 svg:hover {
+    color: rgb(25, 109, 182);
+}
+.ArtS5 .Cont2 p:hover {
+    color: rgb(25, 109, 182);
+}
+
+.ArtS5 .Cont3 svg:hover {
+    color: rgb(182, 25, 140);
+}
+.ArtS5 .Cont3 p:hover {
+    color: rgb(182, 25, 140);
+}
+
+  .h25all{
+    width: 60%;
+  }
+
+   
+  form{
+    width: 36%;
+  }
+  .half{
+    display: flex;
+    justify-content: space-between;
+  }
+  .input{
+    padding: .5rem;
+    width: 49%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  .text-area{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    resize: none;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  .submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+  }
+
+  .submit:active{
+    background-color: #eee;
+  }
+
+
+
+
+
+
+}
