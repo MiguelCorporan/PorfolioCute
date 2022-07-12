@@ -226,13 +226,14 @@ transform: translateX(0);
 
 .S2{
     width: 100%;
-    height: 90%;
+    min-height: 100vh; 
+    margin-bottom: 2rem;
 }
 
 
 .ElMain{
     width: 80%;
-    height: 32%;
+   /*  height: 32%; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.9rem; 
@@ -359,6 +360,7 @@ main p {
 /*----------TERCERA SECCION--------------------------------*/
 
 .Seccion3{
+    margin-top: 7rem;
     width: 100%;
     height: 100vh;
     min-height: 100vh;
@@ -464,17 +466,19 @@ main p {
 }
 
 .Enlaces{
-    width: 20%;
-    height: 100%;
+   /*  width: 20%;
+    height: 100%; */
     display: flex;
     padding-right:10px;
     justify-content: center;
     justify-content: space-evenly;
 }
 
+
 .Gii{
     width: 100%;
     height: 45%;
+    margin-right: .5rem;
 }
 
 .Vi{    
