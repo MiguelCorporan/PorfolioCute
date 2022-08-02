@@ -20,9 +20,9 @@ overflow-x: hidden;
     height: 100%;
 }
 
-.Todo{
+/* .Todo{
 
-}
+} */
 
 
 header{
@@ -135,52 +135,10 @@ transform: translateX(0);
     width: 100%;
     height:100%;
     margin: 0 auto;
-    animation-name: mia;
-    animation-duration: 20s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    background-image: url(/Fotos/P1.jpg);
+    background-size: 100% 100%;
     position: absolute;
     z-index: 1000;
-}
-
-
-
-@keyframes mia {
-    0%,10% {background-image: url(/Fotos/P1.jpg);
-  background-size: 100% 100%;
-  
- }
- 11%,14%{opacity: 1;}
-  15%,25%{
-      background-image:url(/Fotos/P7.jpg) ;
-      background-size: 100% 100%;
-  }  
-  26%,29%{opacity:1 ;}
-  30%,40%{
-      background-image: url(/Fotos/Lp2.jpg);
-      background-size: 100% 100%;
-  }
-  41%,44%{opacity: 1;}
-  45%,55%{
-      background-image: url(/Fotos/P3.jpg);
-      background-size: 100% 100%;
-  }
-  56%,59%{opacity: 1;}
-  60%,70%{
-  background-image: url(/Fotos/P4.jpg);
-      background-size: 100% 100%;
-  }
-  71%,74%{opacity: 1;}
-  75%,85%{
-      background-image: url(/Fotos/P5.gif);
-      background-size: 100% 100%;
-  }
-  86%,89%{opacity: 1;}
-  90%,100%{
-      background-image: url(/Fotos/P6.png);
-      background-size: 100% 100%;
-     }
-
 }
 
 
@@ -466,8 +424,6 @@ main p {
 }
 
 .Enlaces{
-   /*  width: 20%;
-    height: 100%; */
     display: flex;
     padding-right:10px;
     justify-content: center;
@@ -861,9 +817,9 @@ header{
     margin-right: auto;
 }
 
- .Avarca{
+ /* .Avarca{
 
- }
+ } */
 
 
 /*--------------SLIDE PC--------------------------------------*/
