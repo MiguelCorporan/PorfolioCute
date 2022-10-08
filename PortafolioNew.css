@@ -242,7 +242,7 @@ h3 {
   width: 30%;
   height: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -251,8 +251,10 @@ h3 {
   color: rgb(255, 255, 255);
   padding: 5px 8px 5px 8px;
   border: 1px solid rgb(255, 255, 255);
-  border-radius: 50%;
+  border-radius: 45%;
   text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .Proye {
@@ -498,7 +500,7 @@ form {
   background-color: transparent;
   border: none;
   outline: none;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(25, 211, 195);
   color: rgb(255, 255, 255);
 }
 
@@ -920,12 +922,16 @@ footer {
     background-color: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(25, 211, 195);
     color: rgb(255, 255, 255);
     cursor: pointer;
   }
 
   .submit:active {
     background-color: #eee;
+  }
+
+  .submit:hover {
+    color: rgb(25, 211, 195);
   }
 }
