@@ -30,19 +30,18 @@ lola.addEventListener('click', (e) =>{
 })
 -*/
 
-const modo = document.querySelector('.Modo')
-const mn = document.querySelector('.Mn')
+/* 
+const modo = document.querySelector(".Modo");
+const mn = document.querySelector(".Mn");
 
-modo.addEventListener('click', (e) => {
-    mn.classList.toggle('active')
-})
-
-
+modo.addEventListener("click", (e) => {
+  mn.classList.toggle("active");
+}); */
 
 /*-*/
 
-
-const form = document.getElementById("recibe");
+const form = document.querySelector("#recibe");
+console.log(form);
 const alert = document.querySelector(".alert");
 const inputName = form.name;
 const inputEmail = form.email;
@@ -84,54 +83,44 @@ validar(inputArea, "este mensaje es incorrecto", rexMessage);
 }); */
 
 const send = () => {
-fetch("https://formsubmit.co/ajax/Mcorporan536@gmail.com", {
-method: "POST",
-headers: {
-"Content-Type": "application/json",
-Accept: "application/json",
-},
-body: JSON.stringify({
-name: inputName.value,
-email: inputEmail.value,
-message: inputArea.value,
-}),
-})
-.then((response) => response.json())
-.then((data) => {
-/* inputName.classList.remove("success", "error");
+  fetch("https://formsubmit.co/ajax/Mcorporan536@gmail.com", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({
+      name: inputName.value,
+      email: inputEmail.value,
+      message: inputArea.value,
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      /* inputName.classList.remove("success", "error");
 inputEmail.classList.remove("success", "error");
 inputArea.classList.remove("success", "error"); */
-alert.textContent= 'su mensaje se envio correctamente'
-alert.classList.add('success')
-
-setTimeout(() => {
-    alert.textContent= ''
-    alert.classList.remove('success')
-    
-}, 5000);
-form.reset();
-})
-.catch((error) => {
-    console.log(error);
-    alert.classList.add('error')
-    alert.textContent = 'hubo un error'
-    setTimeout(() => {
-        alert.textContent= ''
-        alert.classList.remove('')
-        
-    }, 5000);
-});
+      alert.textContent = "su mensaje se envio correctamente";
+      alert.classList.add("success");
+      console.log(data);
+      setTimeout(() => {
+        alert.textContent = "";
+        alert.classList.remove("success");
+      }, 5000);
+      form.reset();
+    })
+    .catch((error) => {
+      console.log(error);
+      alert.classList.add("error");
+      alert.textContent = "hubo un error";
+      setTimeout(() => {
+        alert.textContent = "";
+        alert.classList.remove("");
+      }, 5000);
+    });
 };
 
-
 form.addEventListener("submit", (e) => {
-e.preventDefault();
-send()
-/* if (
-rexName.test(inputName.value) &&
-rexEmail.test(inputEmail.value) &&
-rexMessage.test(inputArea.value)
-) {
-send();
-} */
+  e.preventDefault();
+  send();
 });

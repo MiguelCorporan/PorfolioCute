@@ -1,839 +1,806 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}  
-
-html{
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-background-color: rgb(17, 17, 17);
-color: rgb(255, 255, 255);
-overflow-x: hidden;
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.IMG{
-    width: 100%;
-    height: 100%;
+body {
+  background-color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
+.IMG {
+  width: 100%;
+  height: 100%;
 }
 
 /* .Todo{
 
 } */
 
-
-header{
-width: 100%;
-height: 3rem;  
-display: flex;
-justify-content: space-between;
-position: absolute;
-z-index: 2000;
-background-color: rgba(143, 143, 143, 0.253);
-
+header {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+  background-color: rgba(143, 143, 143, 0.253);
 }
 
-h1 a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+nav {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
 }
 
- nav{
-   width: 18%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-} 
-
-.MenuB{
-    width: 70%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    fill: #fff;
-}
-
-.MenuX{
-    width: 70%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.None{
-    display: none;
-}
-
-.links{
-    position: absolute;
-    top: 20vh;
-    left: 20%;
-    background-color: rgb(255, 255, 255);
-    height: 60vh;
-    width: 60%;
-    transform: scale(0);
-    transition: transform .2s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 10px;
-
-}
-
-.links a {
-    text-decoration: none;
-    margin-bottom: .7rem;
-    font-size: 1.5rem;
-}
-
-.active{
-    transform: scale(1);
-}
-
-.Modo{
-    width: 30%;
-    min-height: 100%;
-    display: flex;
-    align-items: center;
+.HE {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff;
 }
 
 /*-----PARTE QUE DALE DESDE LA IZQUIRDA EN EL MENU DE MOVIL ---------*/
 
-.Part{
-    width: 85%;
-    height: 100vh;
-    z-index: 1000;
-    position: absolute;
-    top: 0;
-    transform: translateX(-100%);
-    transition: transform ease-in-out .3s;
+.Part {
+  width: 85%;
+  height: 100vh;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  transform: translateX(-100%);
+  transition: transform ease-in-out 0.3s;
 }
 
-.Afuera{
-transform: translateX(0);
+.Afuera {
+  transform: translateX(0);
 }
 
 /*----------------------------------------*/
 
 /*------------------------------------------------------*/
 
-.Primero{
-    width: 100%;
-    height: 100vh;
-    position: relative;
+.Primero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  scroll-margin-top: 6.25rem;
 }
 
-
-.mio{
-    width: 100%;
-    height:100%;
-    margin: 0 auto;
-    background-image: url(/Fotos/P1.jpg);
-    background-size: 100% 100%;
-    position: absolute;
-    z-index: 1000;
+main {
+  margin-top: 6rem;
+  position: relative;
 }
 
-
-
-  .Entrada{
-     width: 100%;
-    margin-top: 20%; 
-    position: absolute;
-    z-index: 1500;
-    top:30vh;
-    left: 0;
-} 
-
-.Entrada div{
-  
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.242));
+.deImg {
+  width: 80%;
+  height: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 50px;
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 10px;
 }
 
-.Entrada .titulito{
-    font-size: 2rem;
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Roboto', sans-serif;
-  
-}  
+.deImg img {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
 
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
 
-
+.Abou {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*-------------------SEGUNDA SECCION-----------------------*/
 
-.Segundo{
-    width: 100%;
-    height: 100vh;
-    min-height: 100vh;
-    
+.Segundo {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
 }
 
-.Semueve{
-    height:3%;
-    font-family: monospace; 
-}
-
-.S2{
-    width: 100%;
-    min-height: 100vh; 
-    margin-bottom: 2rem;
-}
-
-
-.ElMain{
-    width: 80%;
-   /*  height: 32%; */
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.9rem; 
-}
-
-h3{
-    width: 100%;
-    height: 20%;
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-.ElMain div {
-    width: 100%;
-    height: 70%;
-}
-
-main p {
-    width: 100%;
-    text-align: center;
+.S2 {
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 2rem;
 }
 
 /*----------NUEVAS COSAS ---------------------*/
-.ArtIcon{
-    width: 100%;
-    min-height: 50%;
-    padding-top: 10px;
+.ArtIcon {
+  width: 100%;
+  min-height: 50%;
+  padding-top: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.Avarca{
-    width: 90%;
-    height: 8%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+.p2 {
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*--LA PIRAMIDE--*/
 
+.Los3 {
+  display: flex;
+  justify-content: center;
+}
 
-.Los3{
+.Los2 {
+  display: flex;
+  justify-content: center;
+}
 
-     display: flex;
-     justify-content: center;
- }
- 
- .Los2{
+.Los1 {
+  display: flex;
+  justify-content: center;
+}
 
-     display: flex;
-     justify-content: center;
- }
- 
- 
- .Los1{
-     display: flex;
-     justify-content: center;
+/*--*/
 
- }
- 
- .Tegno{
-     width: 6rem;
-     height: 4.5rem;
-     background-color: rgba(224, 224, 224, 0.158);
-     
-     /* clip-path: polygon(23% 17%, 70% 16%, 89% 50%, 71% 86%, 25% 87%, 5% 52%); */
-   /*  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);*/
-   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
- 
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
- 
- 
- 
- .Tegno svg{
-     width: 2rem;
-     height:2rem;
- }
- 
- .Tegno p{
-     text-align: center;
- }
- 
- .js{
-     color: rgb(238, 232, 48);
- }
- 
- .html{
-     color: #DC4A25;
- }
- 
- .css{
-     color: #146EB0;
- }
- 
- .react{
-     color: #5ED3F3;
- }
- 
- .node{
-     color: rgb(58, 120, 48);
- }
- 
- .bus{
-     color: rgb(149, 46, 147);
- }
- 
- .gi{
-     color: #d66d53;
- }
- 
- .hu{
-     color: #eee;
- }
- 
- .fi{
-   width: 30%;
-   height: 40%;
- }
+.Tegno svg {
+  width: 2.7rem;
+  height: 2.7rem;
+  margin: 3px;
+}
 
+.Tegno p {
+  text-align: center;
+}
 
+.js {
+  color: rgb(238, 232, 48);
+}
+
+.html {
+  color: #dc4a25;
+}
+
+.css {
+  color: #146eb0;
+}
+
+.react {
+  color: #5ed3f3;
+}
+
+.node {
+  color: rgb(58, 120, 48);
+}
+
+.bus {
+  color: rgb(149, 46, 147);
+}
+
+.gi {
+  color: #d66d53;
+}
+
+.hu {
+  color: #eee;
+}
+
+.fi {
+  width: 10%;
+  height: 30%;
+}
 
 /*----------TERCERA SECCION--------------------------------*/
 
-.Seccion3{
-    margin-top: 7rem;
-    width: 100%;
-    height: 100vh;
-    min-height: 100vh;
+.Seccion3 {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  scroll-margin-top: 6.25rem;
 }
 
-.IdaEnlace{
- width: 90%;
- height: 5%;
- margin-left: auto;
- margin-right: auto;
- display: flex;
- justify-content: space-between;
- align-items: center;
+.Ti h3 {
+  font-size: 2rem;
 }
 
-.Enlace2{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.IdaEnlace {
+  width: 90%;
+  /* height: 4%; */
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 1rem; */
+  align-items: center;
+  text-align: center;
+}
+
+.Enlace2 {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Enlace2 a {
-    color: rgb(255, 255, 255);
-    padding: 5px 8px 5px 8px;
-    border: 1px solid rgb(255, 255, 255);
-    text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 5px 8px 5px 8px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  text-decoration: none;
 }
 
-.Proye{
-    scroll-margin-top: 4rem;
-    width: 100%;
-    height: 90%;
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    position: relative;
+.Proye {
+  scroll-margin-top: 4rem;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  position: relative;
 }
 
-.Proye .ConCuadro1{
-    scroll-margin-top: 15px;
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding: 5px;
-    align-items: center;
-    transform: scale(1);
-    transition: transform 0.5s;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.Proye .ConCuadro1 {
+  scroll-margin-top: 15px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 5px;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .Proye::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-
-  .Proye::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-
-.ConCuadro{
-    width: 100%;
-    height: 90%;
-
+  width: 10px;
+  height: 10px;
 }
 
-.Cuadro{
-    width: 45%;
-    margin-right: 1%;
-    margin-left: 1%;
-    height: 25%;
-    background-color: rgb(30, 30, 30);
+.Proye::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.SeVe{
-    width: 90%;
-    height: 65%;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+.ConCuadro {
+  width: 100%;
+  height: 90%;
 }
 
-.SeVe2{
-    width: 100%;
-    height: 20%;
-    margin-top: 10px;
-    display: flex;
+.Cuadro {
+  width: 45%;
+  margin-right: 1%;
+  margin-left: 1%;
+  height: 25%;
+  background-color: rgb(30, 30, 30);
+  border-radius: 20px;
 }
 
-.Dtegno{
-    width: 80%;
-    height: 100%;
-    align-items: center;
-    padding-left: 13px;
+.SeVe {
+  width: 90%;
+  height: 65%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.Enlaces{
-    display: flex;
-    padding-right:10px;
-    justify-content: center;
-    justify-content: space-evenly;
+.SeVe2 {
+  width: 100%;
+  height: 20%;
+  margin-top: 10px;
+  display: flex;
 }
 
-
-.Gii{
-    width: 100%;
-    height: 45%;
-    margin-right: .5rem;
+.Dtegno {
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  padding-left: 13px;
 }
 
-.Vi{    
-    width: 100%;
-    height: 45%;
+.Enlaces {
+  display: flex;
+  padding-right: 10px;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.H{
-    width: 20%;
-    height: 60%;
- }
+.Gii {
+  width: 100%;
+  height: 45%;
+  margin-right: 0.5rem;
+}
 
- .C{
-    width: 20%;
-    height: 60%;
- }
+.Vi {
+  width: 100%;
+  height: 45%;
+}
 
- .J{
-     width: 20%;
-    height: 59%;
- }
+.H {
+  width: 20%;
+  height: 60%;
+}
 
- .R{
-    width: 20%;
-    height: 60%;
- }
+.C {
+  width: 20%;
+  height: 60%;
+}
 
- .N{
-    width: 20%;
-    height: 60%;
- }
+.J {
+  width: 20%;
+  height: 59%;
+}
 
- .M{
-    width: 20%;
-    height: 60%;
- }
+.R {
+  width: 20%;
+  height: 60%;
+}
 
- .B{
-    width: 20%;
-    height: 60%;
- }
+.N {
+  width: 20%;
+  height: 60%;
+}
 
- .Vi{
-    color: #aea9a7;
- }
+.M {
+  width: 20%;
+  height: 60%;
+}
 
- .Gii{
-    color: #aea9a7;
- }
+.B {
+  width: 20%;
+  height: 60%;
+}
 
+.Vi {
+  color: #aea9a7;
+}
+
+.Gii {
+  color: #aea9a7;
+}
 
 /*------------SECCIOON CONCO 5---------------------------------**/
 
-.Quinto{
-    width: 100%;
-    height: 100vh;
-    padding-top: 7%;
-    position: relative;
+.Quinto {
+  width: 100%;
+  height: 100vh;
+  padding-top: 7%;
+  position: relative;
+  scroll-margin-top: 6.25rem;
 }
 
-
-.h25all{
-    width: 90%;
-    height: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .hr3{
-    width: 25%;
-  }
-  
-  .h25{
-    width: 50%;
-  }
-  
-  .hr4{
-    width: 25%;
-  }
-  
-  .ArtS5{
-      width: 96%;
-      height: 30%;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  .ArtS5 div{
-      width: 30%;
-      height: 50%;
-      margin: 1px;
-      border: 1px solid rgb(247, 247, 247);
-  }
-  
-  .ArtS5 svg{
-      width: 40%;
-      height: 40%;
-      margin-left: 30%;
-      margin-top: 1rem;
-  }
-  
-  .ArtS5 p{
-      text-align: center;
-  }
-  
-  .ArtS5 a{
-      text-decoration: none;
-  }
-  
-  
-  form{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .half{
-    display: flex;
-    justify-content: space-between;
-  }
-  .input{
-    padding: .5rem;
-    width: 49%;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid rgb(255, 255, 255);
-    color: #eee;
-  }
-  .text-area{
-    width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    resize: none;
-    color: #fff;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid rgb(255, 255, 255);
-  }
-  .submit{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: .5rem 1rem;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-  
-  }
-  
-  .ArtS5 div svg{
-    color: rgb(255, 255, 255);
+.h25all {
+  width: 90%;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
-.ArtS5 div p{
-    color: rgb(255, 255, 255);
+.hr3 {
+  width: 25%;
 }
 
-footer{
-    text-align: center;
+.h25 {
+  width: 50%;
 }
 
+.hr4 {
+  width: 25%;
+}
+/*---Las cosas de abajo-----------*/
+.ArtS5 {
+  width: 96%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.ArtS5 div {
+  width: 30%;
+  height: 40%;
+  margin: 1px;
+  border: 1px solid rgb(247, 247, 247);
+  border-radius: 20px;
+}
 
+.ArtS5 svg {
+  width: 40%;
+  height: 40%;
+  margin-left: 30%;
+  margin-top: 1rem;
+}
 
+.ArtS5 p {
+  text-align: center;
+}
+
+.ArtS5 a {
+  text-decoration: none;
+}
+/*---------------*/
+
+form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 1.5rem;
+}
+
+.half {
+  display: flex;
+  justify-content: space-between;
+}
+.input {
+  padding: 0.5rem;
+  width: 49%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(25, 211, 195);
+  color: rgb(255, 255, 255);
+}
+.text-area {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  resize: none;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(25, 211, 195);
+}
+.submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.ArtS5 div svg {
+  color: rgb(255, 255, 255);
+}
+
+.ArtS5 div p {
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  text-align: center;
+}
+
+.ArtS5 .Cont1 svg {
+  color: rgb(82, 182, 25);
+}
+.ArtS5 .Cont1 p {
+  color: rgb(82, 182, 25);
+}
+
+.ArtS5 .Cont2 svg {
+  color: rgb(25, 109, 182);
+}
+.ArtS5 .Cont2 p {
+  color: rgb(25, 109, 182);
+}
+
+.ArtS5 .Cont3 svg {
+  color: rgb(182, 25, 140);
+}
+.ArtS5 .Cont3 p {
+  color: rgb(182, 25, 140);
+}
 /*----------------------------------*/
 /*----------------------------------------------*/
 /*-----------------------------------------------------------------*/
 
 @media screen and (min-width: 440px) {
-
-    .ElMain{
-        height: 40%;
-    }
+  .ElMain {
+    height: 40%;
+  }
 }
 
 @media screen and (min-width: 780px) {
-
-
-
-
-.S2{
+  .S2 {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-
-
-main{
+  main {
     width: 70%;
     height: 40%;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.S2 article {
+  .S2 article {
     width: 80%;
     min-height: 40%;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.Los3{
+  .Los3 {
     width: 100%;
-}
+  }
 
-.Los2{
+  .Los2 {
     width: 100%;
+  }
 
-}
-
-.Los1{
+  .Los1 {
     width: 100%;
+  }
 
-}
+  .Tegno {
+    width: 8rem;
+    height: 5.5rem;
+  }
+  .Tegno svg {
+    width: 2.5rem;
+    height: 2.5;
+  }
 
-.Tegno{
-  width: 8rem;
-  height: 5.5rem;
-}
-.Tegno svg{
-  width: 2.5rem;
-  height: 2.5;
-}
-
-
-/*-*/
-.T3{
+  /*-*/
+  .T3 {
     height: 60%;
-}
+  }
 
-.Bonis{
-    margin-bottom: .1rem;
-}
+  .Bonis {
+    margin-bottom: 0.1rem;
+  }
 
-
-.FotP{
+  .FotP {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
+  .Entrada {
+    top: 0;
+  }
 
-.Entrada{
+  .Entrada .titulito {
+    font-size: 3rem;
+  }
 
-   top: 0;
-} 
-
-
-
-.Entrada .titulito{
-   font-size: 3rem;
-}  
-
-.Tercero{
+  .Tercero {
     margin-bottom: 4rem;
-}
+  }
 
-
-/*-----FORMULARIO----------*/
-.ArtS5{
+  /*-----FORMULARIO----------*/
+  .ArtS5 {
     width: 80%;
   }
 
+  .ArtS5 .Cont1 svg {
+    color: rgb(82, 182, 25);
+  }
+  .ArtS5 .Cont1 p {
+    color: rgb(82, 182, 25);
+  }
 
+  .ArtS5 .Cont2 svg {
+    color: rgb(25, 109, 182);
+  }
+  .ArtS5 .Cont2 p {
+    color: rgb(25, 109, 182);
+  }
 
+  .ArtS5 .Cont3 svg {
+    color: rgb(182, 25, 140);
+  }
+  .ArtS5 .Cont3 p {
+    color: rgb(182, 25, 140);
+  }
 }
-
-
-
-
 
 @media screen and (min-width: 1000px) {
-
-
-html{
+  html {
     scroll-behavior: smooth;
-}
+  }
 
-header{
+  header {
     position: fixed;
-}
+  }
 
-.links{
+  main {
+    width: 100%;
+    height: 70%;
+  }
+
+  .One {
+    width: 100%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Abou {
+    width: 35%;
+  }
+
+  .Two {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ArtIcon {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Tegno svg {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0;
+  }
+
+  .p2 {
+    width: 30%;
+  }
+
+  .links {
     position: static;
     width: auto;
     height: auto;
     background-color: transparent;
     flex-direction: row;
     transform: scale(1);
+  }
 
-}
-
-.Mn a:hover{
+  .Mn a:hover {
     border-bottom: 1px solid rgb(255, 255, 255);
-}
+  }
 
- h1{
-     margin-left: 2rem;
- }
+  h1 {
+    margin-left: 2rem;
+  }
 
- .Modo{
-     display: none;
- }
- 
- nav{
+  .Modo {
+    display: none;
+  }
+
+  nav {
     background-color: rgba(121, 121, 121, 0.077);
-}
- .Mn{
-     width: 100%;
-     display: flex;
-     color: rgb(0, 0, 0);
- }
+  }
+  .Mn {
+    width: 100%;
+    display: flex;
+    color: rgb(0, 0, 0);
+  }
 
- .Mn a{
-     font-size: 1.3rem;
-     text-decoration: none;
-     color: azure;
-     margin-right: .5rem;
- }
-/*----------------------------------*/
+  .Mn a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: azure;
+    margin-right: 0.5rem;
+  }
+  /*----------------------------------*/
 
-.IdaEnlace{
-    width: 70%
-}
+  .IdaEnlace {
+    width: 70%;
+  }
 
-.Enlace2{
+  .Enlace2 {
     width: 18%;
-}
+  }
 
-.Enlace2 a:hover{
+  .Enlace2 a:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-}
+  }
 
-.Vi:hover{
+  .Vi:hover {
     color: #ffffff;
-}
+  }
 
-.Gii:hover{
+  .Gii:hover {
     color: #fff;
-}
+  }
 
-.Tegno{
+  .Tegno {
     width: 10rem;
     height: 7rem;
-   }
+  }
 
- .S2{
-     width: 85%;
-     height: 95%;
- }
+  .S2 {
+    width: 85%;
+    height: 95%;
+  }
 
- .Cuadro{
+  .Cuadro {
     width: 30%;
- }
+  }
 
- .ElMain{
+  .ElMain {
     width: 60%;
     height: 25%;
- }
+  }
 
- .S2 .ArtIcon {
+  .S2 .ArtIcon {
     width: 80%;
     min-height: 30%;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
- /* .Avarca{
+  /* .Avarca{
 
  } */
 
+  /*--------------SLIDE PC--------------------------------------*/
 
-/*--------------SLIDE PC--------------------------------------*/
-.slider {
+  .Proye {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider {
     width: 100%;
     height: 100%;
     text-align: center;
     overflow: hidden;
   }
 
-  .P1Todos{
+  .P1Todos {
     width: 30%;
   }
-  
+
   .slides {
     width: 100%;
     height: 90%;
@@ -865,80 +832,76 @@ header{
     align-items: center;
     transform: scale(1);
     transition: transform 0.5s;
-
-  
   }
 
-  .Cuadro{
+  .Cuadro {
     width: 24%;
     height: 33%;
-}
-
-.Proye .ConCuadro1{
-    justify-content: center;
-}
-
-
-
-/*------FORMULARIO 1000----------------------------*/
-
-.ArtS5{
-    width: 50%;
   }
 
-  .ArtS5 div{
+  .Proye .ConCuadro1 {
+    justify-content: center;
+  }
+
+  /*------FORMULARIO 1000----------------------------*/
+
+  .ArtS5 {
+    width: 25%;
+    margin-top: 2rem;
+  }
+
+  .ArtS5 div {
     width: 25%;
     height: 60%;
     margin: 1px;
     border: 1px solid rgb(247, 247, 247);
-}
+  }
 
-.ArtS5 div:active{
+  .ArtS5 div:active {
     background-color: #aea9a7;
-}
+  }
 
-.ArtS5 .Cont1 svg:hover {
-    color: rgb(82, 182, 25);
-}
-.ArtS5 .Cont1 p:hover {
-    color: rgb(82, 182, 25);
-}
+  .ArtS5 .Cont1 svg:hover {
+    color: rgb(118, 201, 71);
+  }
+  .ArtS5 .Cont1 p:hover {
+    color: rgb(125, 210, 76);
+  }
 
-.ArtS5 .Cont2 svg:hover {
-    color: rgb(25, 109, 182);
-}
-.ArtS5 .Cont2 p:hover {
-    color: rgb(25, 109, 182);
-}
+  .ArtS5 .Cont2 svg:hover {
+    color: rgb(70, 145, 210);
+  }
+  .ArtS5 .Cont2 p:hover {
+    color: rgb(70, 136, 193);
+  }
 
-.ArtS5 .Cont3 svg:hover {
-    color: rgb(182, 25, 140);
-}
-.ArtS5 .Cont3 p:hover {
-    color: rgb(182, 25, 140);
-}
+  .ArtS5 .Cont3 svg:hover {
+    color: rgb(223, 89, 187);
+  }
+  .ArtS5 .Cont3 p:hover {
+    color: rgb(225, 91, 189);
+  }
 
-  .h25all{
+  .h25all {
     width: 60%;
   }
 
-   
-  form{
-    width: 36%;
+  form {
+    width: 20%;
   }
-  .half{
+  .half {
     display: flex;
     justify-content: space-between;
   }
-  .input{
-    padding: .5rem;
+  .input {
+    padding: 0.5rem;
     width: 49%;
     background-color: transparent;
     border: none;
     outline: none;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(25, 211, 195);
   }
-  .text-area{
+  .text-area {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -947,29 +910,22 @@ header{
     background-color: transparent;
     border: none;
     outline: none;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(25, 211, 195);
   }
-  .submit{
+  .submit {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     background-color: transparent;
     border: none;
     outline: none;
     border: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     cursor: pointer;
-
   }
 
-  .submit:active{
+  .submit:active {
     background-color: #eee;
   }
-
-
-
-
-
-
 }
