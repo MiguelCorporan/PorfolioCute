@@ -1,48 +1,39 @@
+/*-----------------MAQUINA DE ESCRIBIR ---------------*/
 
-  /*-----------------MAQUINA DE ESCRIBIR ---------------*/
-
-  
 .contenedor {
-	margin: auto;
-	display: table;
+  margin: auto;
+  display: table;
 }
 
 h2 {
-/*   height: 2rem;  */
-	position: relative; 
-/* 	background: rgb(0, 0, 0); */
-	color: #fff;
-	font-size: 1.5em;
+  position: relative;
+
+  color: #fff;
+  font-size: 1.5em;
 }
 
 .SeEscribe span {
-    position:absolute;
-    right:0;
-    width:0;
-    background: rgb(17, 17, 17);
-    border-left: 1px solid #000;
-    animation: escribir 5s steps(30) infinite alternate;
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: rgb(17, 17, 17);
+  border-left: 1px solid #000;
+  animation: escribir 5s steps(30) infinite alternate;
 }
 
 @keyframes escribir {
-    from { width: 100% }
-    to { width:0 }
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
-
-
-
 
 /**-------RESPONSIVE DE EL LAS CARD PRINCIPALES-------------------------------*/
 
 @media screen and (min-width: 780px) {
-
-
-  
 }
 
 @media screen and (min-width: 1000px) {
-
 }
-
-
-

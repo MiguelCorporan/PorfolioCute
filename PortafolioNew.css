@@ -10,9 +10,6 @@ html {
 }
 
 body {
-  /*  background-color: rgb(17, 17, 17);
-  color: rgb(255, 255, 255);
-  overflow-x: hidden; */
   color: #ffffff;
 }
 
@@ -242,10 +239,10 @@ h3 {
 
 .IdaEnlace {
   width: 90%;
-  /* height: 4%; */
+
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 1rem; */
+
   align-items: center;
   text-align: center;
 }

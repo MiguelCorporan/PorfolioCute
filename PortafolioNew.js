@@ -1,5 +1,6 @@
 /*-------*/
 
+AOS.init();
 /* const lola = document.querySelector('.Lola')
 const GD = document.querySelector('.GD')
 const G = document.querySelector('.G')
